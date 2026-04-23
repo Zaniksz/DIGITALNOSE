@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DIGITALNOSE — Congreso CUA-MOR XXXVI</title>
+  <title>DIGITALNOSE — XXXVI Congreso CUAM-ACMor 2026</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
   <style>
     :root {
@@ -806,21 +806,21 @@
       <li><a href="#sensores">Sensores</a></li>
       <li><a href="#equipo">Equipo</a></li>
     </ul>
-    <span class="nav-badge">CUA-MOR XXXVI</span>
+    <span class="nav-badge">CUAM-ACMor XXXVI · 2026</span>
   </nav>
 
   <!-- ── HERO ── -->
   <header>
     <div class="sensor-visual"></div>
     <p class="hero-congreso">
-      <span class="live-badge"><span class="live-dot"></span>Congreso de Investigación CUA-MOR XXXVI</span>
+      <span class="live-badge"><span class="live-dot"></span>XXXVI Congreso de Investigación CUAM-ACMor · Cuernavaca, Morelos</span>
     </p>
     <h1 class="hero-titulo">DIGITAL<span class="highlight">NOSE</span></h1>
     <p class="hero-subtitulo">— Monitor Atmosférico Inteligente —</p>
     <p class="hero-descripcion">
-      Sistema de detección y monitoreo de gases en tiempo real basado en Arduino
-      y sensores de la familia MQ, con interfaz de escritorio desarrollada en Electron.
-      Una solución tecnológica de bajo costo para la seguridad ambiental.
+      Sistema de detección y monitoreo de gases en tiempo real basado en Arduino UNO R4 WiFi
+      y sensores de la familia MQ, con interfaz de escritorio en Electron y servidor WiFi integrado.
+      Categoría: <strong style="color:var(--verde-sensor)">Área de Construcción de Prototipos — K1. Prototipos Digitales · Proyecto Escolar</strong>
     </p>
     <div class="hero-btns">
       <a href="#problematica" class="btn-primary">Ver Investigación</a>
@@ -877,103 +877,282 @@
   <section id="anosmia" style="background: linear-gradient(180deg, transparent, rgba(255,107,53,0.03) 50%, transparent);">
     <div class="section">
       <p class="section-label">02 — Marco Científico</p>
-      <h2 class="section-titulo">Anosmia, COVID-19<br>y la <em>nariz electrónica</em></h2>
+      <h2 class="section-titulo">Anosmia: La pérdida<br>silenciosa del <em>olfato</em></h2>
       <p class="section-texto">
         Para entender por qué DIGITALNOSE es un proyecto relevante, es necesario
-        comprender qué es la <strong style="color:var(--cyan)">anosmia</strong> y su relación con la pandemia de COVID-19.
-        La anosmia es la pérdida total o parcial del sentido del olfato. No es una
-        condición menor: el olfato humano es uno de nuestros principales mecanismos
-        de alerta ante peligros invisibles, como escapes de gas, humo de incendio o
-        aire contaminado. Una persona que no puede oler, no puede detectar esas amenazas
-        con su propio cuerpo — y ahí es exactamente donde entra DIGITALNOSE.
+        comprender qué es la <strong style="color:var(--cyan)">anosmia</strong> y su relación con la salud humana.
+        La anosmia es la pérdida total o parcial del sentido del olfato — un sentido que,
+        como la ciencia ha demostrado en los últimos años, va mucho más allá de disfrutar
+        los aromas: es un <strong style="color:var(--naranja-alerta)">indicador temprano de enfermedades graves</strong>, un mecanismo
+        vital de seguridad, y su pérdida masiva durante la pandemia de COVID-19 reveló una
+        necesidad tecnológica urgente que DIGITALNOSE busca atender.
       </p>
 
-      <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 3rem; align-items: start;">
+      <!-- ── ¿QUÉ ES LA ANOSMIA? ── -->
+      <div style="margin-top: 3rem;">
+        <h3 style="font-family: var(--fuente-titulo); font-size: 1.1rem; color: var(--cyan); margin-bottom: 1.5rem; letter-spacing: 0.05em; border-bottom: 1px solid var(--cyan-borde); padding-bottom: 0.8rem;">¿Qué es la Anosmia y cómo funciona el olfato?</h3>
 
-        <div>
-          <h3 style="font-family: var(--fuente-titulo); font-size: 1.1rem; color: var(--naranja-alerta); margin-bottom: 1.2rem; letter-spacing: 0.05em;">¿Qué es la Anosmia?</h3>
-          <p style="font-size: 0.95rem; color: var(--gris-texto); line-height: 1.9; margin-bottom: 1rem;">
-            El olfato humano funciona gracias a millones de <strong style="color:var(--blanco)">neuronas sensoriales olfativas</strong>
-            ubicadas en el epitelio de la cavidad nasal. Estas neuronas detectan moléculas
-            químicas en el aire y envían señales al bulbo olfatorio del cerebro, que las
-            interpreta como olores. Cuando estas neuronas se dañan o destruyen, el resultado
-            es la anosmia.
-          </p>
-          <p style="font-size: 0.95rem; color: var(--gris-texto); line-height: 1.9; margin-bottom: 1rem;">
-            Antes de la pandemia de COVID-19, la Organización Mundial de la Salud estimaba
-            que aproximadamente el <strong style="color:var(--cyan)">5% de la población mundial</strong> ya vivía con anosmia,
-            y entre el 15% y 20% tenía algún grado de alteración olfatoria. La pérdida
-            de olfato tras infecciones virales representa la <strong style="color:var(--blanco)">segunda causa más frecuente</strong>
-            de anosmia, afectando al 12–25% de los pacientes que sufren infecciones
-            de vías respiratorias altas.
-          </p>
-          <p style="font-size: 0.95rem; color: var(--gris-texto); line-height: 1.9;">
-            Los peligros de la anosmia van más allá de no poder disfrutar los aromas del
-            café o las flores. Una persona anósmica <strong style="color:var(--naranja-alerta)">no puede detectar una fuga de gas</strong>
-            en su hogar, no percibe el humo de un incendio a tiempo, y no advierte la
-            presencia de gases tóxicos en su entorno. Para estas personas, un sistema
-            como DIGITALNOSE no es un lujo tecnológico — es una herramienta de seguridad esencial.
-          </p>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: start;">
+          <div>
+            <p style="font-size: 0.95rem; color: var(--gris-texto); line-height: 1.9; margin-bottom: 1.2rem;">
+              El olfato humano funciona gracias a millones de <strong style="color:var(--blanco)">neuronas sensoriales olfativas</strong>
+              ubicadas en el epitelio de la cavidad nasal. Cuando moléculas odorantes viajan por el aire,
+              estas neuronas las detectan y envían señales eléctricas directamente al
+              <strong style="color:var(--blanco)">bulbo olfatorio</strong> en el cerebro, que las interpreta como olores.
+              Lo extraordinario de este sistema, según la Biblioteca Nacional de Medicina de EE.UU. (NIH),
+              es que el olfato es el único sentido que <strong style="color:var(--cyan)">no pasa por el tálamo</strong> — va
+              directo a la corteza olfativa, lo que hace que la memoria olfativa sea más intensa
+              y directa que cualquier otro recuerdo sensorial.
+            </p>
+            <p style="font-size: 0.95rem; color: var(--gris-texto); line-height: 1.9; margin-bottom: 1.2rem;">
+              La anosmia puede ser <em>temporal</em> (causada por infecciones, alergias o
+              congestión) o <em>permanente</em> (por daño neurológico, traumatismos craneales
+              o enfermedades neurodegenerativas). Según el NIH, las causas incluyen
+              obstrucciones mecánicas nasales, daño a las neuronas del bulbo olfatorio,
+              traumatismo craneoencefálico, exposición a toxinas industriales, y enfermedades
+              neurológicas como el Alzheimer y el Parkinson.
+            </p>
+            <p style="font-size: 0.95rem; color: var(--gris-texto); line-height: 1.9;">
+              Antes de la pandemia de COVID-19, la OMS estimaba que el
+              <strong style="color:var(--cyan)">5% de la población mundial</strong> vivía con anosmia
+              y entre el 15% y 20% tenía alguna alteración olfatoria.
+              La pérdida de olfato después de una infección viral es la
+              <strong style="color:var(--blanco)">segunda causa más frecuente</strong> de anosmia,
+              afectando al 12–25% de los pacientes con infecciones respiratorias altas.
+            </p>
+          </div>
+          <div>
+            <div style="background: rgba(0,229,255,0.04); border: 1px solid var(--cyan-borde); padding: 2rem; margin-bottom: 1.5rem;">
+              <p style="font-family: var(--fuente-mono); font-size: 0.65rem; color: var(--cyan); letter-spacing: 0.2em; margin-bottom: 1rem;">TIPOS DE ANOSMIA</p>
+              <div style="display: flex; flex-direction: column; gap: 0.8rem;">
+                <div style="display: flex; gap: 0.8rem; align-items: flex-start;">
+                  <span style="color: var(--naranja-alerta); font-size: 1rem; flex-shrink:0;">▸</span>
+                  <div><strong style="color:var(--blanco); font-size:0.85rem;">Anosmia total:</strong> <span style="font-size:0.82rem; color:var(--gris-texto);">incapacidad absoluta para percibir cualquier olor.</span></div>
+                </div>
+                <div style="display: flex; gap: 0.8rem; align-items: flex-start;">
+                  <span style="color: var(--naranja-alerta); font-size: 1rem; flex-shrink:0;">▸</span>
+                  <div><strong style="color:var(--blanco); font-size:0.85rem;">Hiposmia:</strong> <span style="font-size:0.82rem; color:var(--gris-texto);">reducción parcial de la capacidad olfativa; se perciben olores pero con menor intensidad.</span></div>
+                </div>
+                <div style="display: flex; gap: 0.8rem; align-items: flex-start;">
+                  <span style="color: var(--naranja-alerta); font-size: 1rem; flex-shrink:0;">▸</span>
+                  <div><strong style="color:var(--blanco); font-size:0.85rem;">Parosmia:</strong> <span style="font-size:0.82rem; color:var(--gris-texto);">distorsión del olfato; los olores son percibidos de forma diferente o desagradable. Frecuente en COVID-19.</span></div>
+                </div>
+                <div style="display: flex; gap: 0.8rem; align-items: flex-start;">
+                  <span style="color: var(--naranja-alerta); font-size: 1rem; flex-shrink:0;">▸</span>
+                  <div><strong style="color:var(--blanco); font-size:0.85rem;">Fantosmia:</strong> <span style="font-size:0.82rem; color:var(--gris-texto);">percepción de olores que no existen; alucinaciones olfativas.</span></div>
+                </div>
+                <div style="display: flex; gap: 0.8rem; align-items: flex-start;">
+                  <span style="color: var(--naranja-alerta); font-size: 1rem; flex-shrink:0;">▸</span>
+                  <div><strong style="color:var(--blanco); font-size:0.85rem;">Anosmia congénita:</strong> <span style="font-size:0.82rem; color:var(--gris-texto);">presente desde el nacimiento; vinculada al síndrome de Kallmann o al síndrome de Turner.</span></div>
+                </div>
+              </div>
+            </div>
+            <div style="background: rgba(255,107,53,0.06); border: 1px solid rgba(255,107,53,0.25); padding: 1.5rem;">
+              <p style="font-family: var(--fuente-mono); font-size: 0.65rem; color: var(--naranja-alerta); letter-spacing: 0.2em; margin-bottom: 0.8rem;">PELIGRO INVISIBLE</p>
+              <p style="font-size: 0.88rem; color: var(--gris-texto); line-height: 1.8;">
+                Una persona con anosmia <strong style="color:var(--naranja-alerta)">no puede detectar</strong> fugas de gas LP,
+                humo de incendios, gases tóxicos, alimentos en mal estado ni señales
+                de alerta química en su entorno. Para estas personas, DIGITALNOSE
+                funciona como un <strong style="color:var(--verde-sensor)">sistema de olfato artificial</strong> que vigila
+                continuamente lo que el cuerpo humano ya no puede percibir.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div>
-          <h3 style="font-family: var(--fuente-titulo); font-size: 1.1rem; color: var(--naranja-alerta); margin-bottom: 1.2rem; letter-spacing: 0.05em;">El Impacto del COVID-19</h3>
-          <p style="font-size: 0.95rem; color: var(--gris-texto); line-height: 1.9; margin-bottom: 1rem;">
-            La pandemia de SARS-CoV-2 convirtió la anosmia en un fenómeno global masivo.
-            El virus tiene una afinidad especial por los receptores ECA2 (enzima conversora
-            de angiotensina 2) presentes en el epitelio olfatorio. Al infectar estas células,
-            el virus provoca una respuesta inflamatoria que destruye las neuronas sensoriales
-            olfativas — explicando por qué la pérdida de olfato aparece de forma brusca
-            en los pacientes COVID-19, incluso sin congestión nasal acompañante.
-          </p>
-          <p style="font-size: 0.95rem; color: var(--gris-texto); line-height: 1.9; margin-bottom: 1rem;">
-            Estudios publicados en revistas como <em>The BMJ</em> y <em>Cell</em> documentaron que
-            entre el <strong style="color:var(--cyan)">47% y el 68% de los pacientes COVID-19</strong> reportaron
-            alteraciones del olfato. A nivel global, se estima que cerca de
-            <strong style="color:var(--cyan)">27 millones de personas</strong> perdieron el olfato como consecuencia directa
-            de la infección. Más preocupante aún: 1 de cada 3 pacientes seguía sin
-            recuperar el olfato al cabo de un año, y millones continúan con
-            problemas olfativos años después de la infección inicial.
-          </p>
-          <p style="font-size: 0.95rem; color: var(--gris-texto); line-height: 1.9;">
-            Esta realidad pone en evidencia una necesidad tecnológica urgente:
-            <strong style="color:var(--verde-sensor)">sustituir el olfato humano con sensores electrónicos</strong>
-            que puedan detectar gases peligrosos de forma autónoma y continua,
-            especialmente en hogares donde viven personas que han perdido este sentido.
-          </p>
+      <!-- ── ENFERMEDADES QUE CAUSAN ANOSMIA ── -->
+      <div style="margin-top: 3.5rem;">
+        <h3 style="font-family: var(--fuente-titulo); font-size: 1.1rem; color: var(--cyan); margin-bottom: 0.6rem; letter-spacing: 0.05em; border-bottom: 1px solid var(--cyan-borde); padding-bottom: 0.8rem;">Enfermedades que provocan Anosmia</h3>
+        <p style="font-size: 0.85rem; color: var(--gris-texto); margin-bottom: 2rem; font-style: italic;">
+          Fuentes verificadas: Ciencia UNAM (ciencia.unam.mx) · NIH — Biblioteca Nacional de Medicina de EE.UU. · The BMJ · Nature Communications · Frontiers in Molecular Neuroscience · SciELO México · Agencia Iberoamericana para la Difusión de la Ciencia y la Tecnología (DICYT)
+        </p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+
+          <!-- Alzheimer -->
+          <div style="background: rgba(10,25,47,0.8); border: 1px solid var(--cyan-borde); padding: 2rem; border-top: 3px solid var(--naranja-alerta); transition: all 0.3s;">
+            <div style="display:flex; align-items:center; gap:1rem; margin-bottom:1rem;">
+              <span style="font-size:2rem;">🧠</span>
+              <div>
+                <p style="font-family: var(--fuente-titulo); font-size: 0.9rem; color: var(--blanco); font-weight:700;">Enfermedad de Alzheimer</p>
+                <p style="font-family: var(--fuente-mono); font-size: 0.6rem; color: var(--naranja-alerta); letter-spacing: 0.1em;">NEURODEGENERATIVA</p>
+              </div>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--gris-texto); line-height: 1.8; margin-bottom: 1rem;">
+              Según el portal <strong style="color:var(--cyan)">Ciencia UNAM</strong> (ciencia.unam.mx), la pérdida del olfato en el Alzheimer
+              es un <strong style="color:var(--blanco)">síntoma temprano que aparece años antes</strong> de los déficits cognitivos.
+              Las <em>placas amiloides</em>, características de la enfermedad, afectan primero las regiones
+              cerebrales asociadas al olfato — siendo la <strong style="color:var(--blanco)">vía olfativa la primera parte
+              del cerebro que se deteriora</strong> en el Alzheimer.
+            </p>
+            <p style="font-size: 0.85rem; color: var(--gris-texto); line-height: 1.8; margin-bottom: 1rem;">
+              Un estudio publicado en <em>Nature Communications</em> reveló que la microglía
+              (células inmunes cerebrales) comienza a desmantelar conexiones en el bulbo
+              olfatorio mucho antes de que aparezcan las lagunas de memoria.
+              En México, <strong style="color:var(--cyan)">7 de cada 10 personas mayores de 60 años</strong> viven con
+              Alzheimer, según la Secretaría de Salud.
+            </p>
+            <p style="font-size: 0.85rem; color: var(--gris-texto); line-height: 1.8;">
+              La <strong style="color:var(--blanco)">Dra. Rosalinda Guevara Guzmán</strong> y la Dra. Patricia Severiano,
+              de la Facultad de Medicina y la Facultad de Química de la <strong style="color:var(--cyan)">UNAM</strong>,
+              desarrollaron una prueba olfativa pionera adaptada a la población mexicana
+              para detectar el grado de avance del Alzheimer — publicado por la Agencia
+              Iberoamericana para la Difusión de la Ciencia (DICYT).
+            </p>
+          </div>
+
+          <!-- Parkinson -->
+          <div style="background: rgba(10,25,47,0.8); border: 1px solid var(--cyan-borde); padding: 2rem; border-top: 3px solid var(--cyan); transition: all 0.3s;">
+            <div style="display:flex; align-items:center; gap:1rem; margin-bottom:1rem;">
+              <span style="font-size:2rem;">🤲</span>
+              <div>
+                <p style="font-family: var(--fuente-titulo); font-size: 0.9rem; color: var(--blanco); font-weight:700;">Enfermedad de Parkinson</p>
+                <p style="font-family: var(--fuente-mono); font-size: 0.6rem; color: var(--cyan); letter-spacing: 0.1em;">NEURODEGENERATIVA</p>
+              </div>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--gris-texto); line-height: 1.8; margin-bottom: 1rem;">
+              Es la enfermedad con la relación más fuerte y documentada con la anosmia.
+              Según el portal <strong style="color:var(--cyan)">Ciencia UNAM</strong> (ciencia.unam.mx), la pérdida del olfato
+              ocurre <strong style="color:var(--blanco)">décadas antes de que aparezcan los síntomas motores</strong>
+              (temblores, rigidez). La prevalencia de deterioro olfativo en pacientes
+              parkinsonianos alcanza el <strong style="color:var(--blanco)">70 al 100%</strong>, según estudios publicados en
+              <em>NPJ Parkinson's Disease</em>.
+            </p>
+            <p style="font-size: 0.85rem; color: var(--gris-texto); line-height: 1.8; margin-bottom: 1rem;">
+              Un estudio con 2,500 participantes de la Universidad Estatal de Michigan
+              encontró que personas con olfato débil tienen hasta
+              <strong style="color:var(--blanco)">5 veces más riesgo de desarrollar Parkinson</strong>.
+              El Dr. Honglei Chen señaló: <em>"El deterioro olfativo podría desarrollarse
+              años antes del diagnóstico del Parkinson."</em>
+            </p>
+            <p style="font-size: 0.85rem; color: var(--gris-texto); line-height: 1.8;">
+              Investigadores desarrollaron la prueba <em>"NeuroScent"</em> — quien no identifique
+              3 o más de los 7 aromas clave (regaliz, plátano, clavo, rosa, menta, piña, canela)
+              tiene alta probabilidad de tener Parkinson.
+            </p>
+          </div>
+
+          <!-- COVID-19 -->
+          <div style="background: rgba(10,25,47,0.8); border: 1px solid var(--cyan-borde); padding: 2rem; border-top: 3px solid var(--verde-sensor); transition: all 0.3s;">
+            <div style="display:flex; align-items:center; gap:1rem; margin-bottom:1rem;">
+              <span style="font-size:2rem;">🦠</span>
+              <div>
+                <p style="font-family: var(--fuente-titulo); font-size: 0.9rem; color: var(--blanco); font-weight:700;">COVID-19 (SARS-CoV-2)</p>
+                <p style="font-family: var(--fuente-mono); font-size: 0.6rem; color: var(--verde-sensor); letter-spacing: 0.1em;">VIRAL — PANDEMIA GLOBAL</p>
+              </div>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--gris-texto); line-height: 1.8; margin-bottom: 1rem;">
+              El SARS-CoV-2 infecta el epitelio olfatorio a través de los receptores
+              <strong style="color:var(--blanco)">ECA2</strong> (enzima conversora de angiotensina 2), destruyendo
+              las neuronas sensoriales olfativas. La pérdida de olfato aparece de forma brusca,
+              sin congestión nasal — un síntoma único y distintivo del COVID-19.
+            </p>
+            <p style="font-size: 0.85rem; color: var(--gris-texto); line-height: 1.8; margin-bottom: 1rem;">
+              Estudios en <em>The BMJ</em> y <em>Cell</em> documentaron que entre el
+              <strong style="color:var(--blanco)">47% y 68% de los pacientes</strong> perdieron el olfato.
+              A nivel global, <strong style="color:var(--blanco)">~27 millones de personas</strong> sufrieron anosmia por
+              COVID-19. La variante Delta afectó al 44% de infectados; Ómicron al 17%.
+            </p>
+            <p style="font-size: 0.85rem; color: var(--gris-texto); line-height: 1.8;">
+              <strong style="color:var(--naranja-alerta)">1 de cada 3 pacientes</strong> seguía sin recuperar el olfato
+              al año de infección (Universidad de Milán). Millones aún viven con anosmia o
+              parosmia post-COVID años después de la pandemia.
+            </p>
+          </div>
+
+          <!-- Esclerosis múltiple -->
+          <div style="background: rgba(10,25,47,0.8); border: 1px solid var(--cyan-borde); padding: 2rem; border-top: 3px solid rgba(255,107,53,0.5);">
+            <div style="display:flex; align-items:center; gap:1rem; margin-bottom:1rem;">
+              <span style="font-size:2rem;">⚡</span>
+              <div>
+                <p style="font-family: var(--fuente-titulo); font-size: 0.9rem; color: var(--blanco); font-weight:700;">Esclerosis Múltiple</p>
+                <p style="font-family: var(--fuente-mono); font-size: 0.6rem; color: var(--naranja-alerta); letter-spacing: 0.1em; opacity:0.7;">AUTOINMUNE</p>
+              </div>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--gris-texto); line-height: 1.8;">
+              Investigadores publicados en <em>Frontiers in Molecular Neuroscience</em> señalan
+              que la disfunción olfativa también <strong style="color:var(--blanco)">precede a la esclerosis múltiple</strong>.
+              El sistema inmune, al atacar la mielina que recubre las neuronas, puede afectar
+              las vías nerviosas olfativas. La pérdida de olfato es considerada un marcador
+              prodrómico — aparece antes del diagnóstico clínico oficial.
+            </p>
+          </div>
+
+          <!-- Depresión / eventos cardíacos -->
+          <div style="background: rgba(10,25,47,0.8); border: 1px solid var(--cyan-borde); padding: 2rem; border-top: 3px solid rgba(255,107,53,0.5);">
+            <div style="display:flex; align-items:center; gap:1rem; margin-bottom:1rem;">
+              <span style="font-size:2rem;">💔</span>
+              <div>
+                <p style="font-family: var(--fuente-titulo); font-size: 0.9rem; color: var(--blanco); font-weight:700;">Depresión y Eventos Cardíacos</p>
+                <p style="font-family: var(--fuente-mono); font-size: 0.6rem; color: var(--naranja-alerta); letter-spacing: 0.1em; opacity:0.7;">SISTÉMICA</p>
+              </div>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--gris-texto); line-height: 1.8;">
+              El estudio de <em>Frontiers in Molecular Neuroscience</em> (profesor Michael Leon,
+              Universidad de California) identificó que la pérdida de olfato también
+              <strong style="color:var(--blanco)">precede a la depresión mayor y a eventos cardíacos importantes</strong>.
+              La inflamación crónica es el mecanismo común: afecta simultáneamente al sistema
+              olfativo y a los órganos diana. La disfunción olfativa puede ser un marcador
+              universal de inflamación sistémica.
+            </p>
+          </div>
+
+          <!-- Envejecimiento normal -->
+          <div style="background: rgba(10,25,47,0.8); border: 1px solid var(--cyan-borde); padding: 2rem; border-top: 3px solid rgba(0,229,255,0.4);">
+            <div style="display:flex; align-items:center; gap:1rem; margin-bottom:1rem;">
+              <span style="font-size:2rem;">👴</span>
+              <div>
+                <p style="font-family: var(--fuente-titulo); font-size: 0.9rem; color: var(--blanco); font-weight:700;">Envejecimiento Normal</p>
+                <p style="font-family: var(--fuente-mono); font-size: 0.6rem; color: var(--cyan); letter-spacing: 0.1em; opacity:0.8;">FISIOLÓGICO</p>
+              </div>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--gris-texto); line-height: 1.8;">
+              Según el NIH, el envejecimiento normal está asociado con una
+              <strong style="color:var(--blanco)">disminución progresiva del olfato</strong>. Con la edad, se reduce
+              el número de células en el bulbo olfatorio y la superficie del epitelio olfatorio.
+              Esto hace que los adultos mayores sean especialmente vulnerables ante peligros
+              gaseosos que ya no pueden detectar con su propio olfato — convirtiéndolos en
+              el grupo poblacional que más se beneficia de DIGITALNOSE.
+            </p>
+          </div>
+
         </div>
       </div>
 
       <!-- Stats de anosmia -->
       <div class="stats-grid" style="margin-top: 3rem;">
         <div class="stat-card" style="border-left-color: var(--naranja-alerta);">
+          <div class="stat-num" style="color: var(--naranja-alerta);">139</div>
+          <div class="stat-desc">enfermedades distintas tienen la pérdida de olfato como síntoma, según <em>Frontiers in Molecular Neuroscience</em></div>
+        </div>
+        <div class="stat-card" style="border-left-color: var(--naranja-alerta);">
           <div class="stat-num" style="color: var(--naranja-alerta);">27M</div>
-          <div class="stat-desc">personas en el mundo perdieron el olfato a causa del COVID-19, según estudios publicados en <em>The BMJ</em></div>
+          <div class="stat-desc">personas perdieron el olfato por COVID-19 globalmente, según estudio publicado en <em>The BMJ</em></div>
         </div>
         <div class="stat-card" style="border-left-color: var(--naranja-alerta);">
-          <div class="stat-num" style="color: var(--naranja-alerta);">68%</div>
-          <div class="stat-desc">de los pacientes COVID-19 positivos reportaron alteraciones del olfato en estudios clínicos multicéntricos</div>
+          <div class="stat-num" style="color: var(--naranja-alerta);">100%</div>
+          <div class="stat-desc">de los pacientes con Parkinson idiopático muestran hiposmia significativa, según estudios clínicos</div>
         </div>
         <div class="stat-card" style="border-left-color: var(--naranja-alerta);">
-          <div class="stat-num" style="color: var(--naranja-alerta);">1 de 3</div>
-          <div class="stat-desc">pacientes seguía sin recuperar el olfato un año después de la infección, según la Universidad de Milán</div>
-        </div>
-        <div class="stat-card" style="border-left-color: var(--naranja-alerta);">
-          <div class="stat-num" style="color: var(--naranja-alerta);">20%</div>
-          <div class="stat-desc">de la población adulta tiene algún grado de alteración olfatoria, muchos sin saberlo — antes de la pandemia</div>
+          <div class="stat-num" style="color: var(--naranja-alerta);">5×</div>
+          <div class="stat-desc">mayor riesgo de desarrollar Parkinson en personas con olfato débil, según la Universidad Estatal de Michigan</div>
         </div>
       </div>
 
       <!-- Caja de conclusión -->
       <div style="background: rgba(255,107,53,0.06); border: 1px solid rgba(255,107,53,0.3); border-left: 4px solid var(--naranja-alerta); padding: 2rem 2.5rem; margin-top: 2.5rem;">
-        <p style="font-family: var(--fuente-titulo); font-size: 0.8rem; color: var(--naranja-alerta); letter-spacing: 0.15em; margin-bottom: 0.8rem;">CONCLUSIÓN DEL MARCO TEÓRICO</p>
+        <p style="font-family: var(--fuente-titulo); font-size: 0.8rem; color: var(--naranja-alerta); letter-spacing: 0.15em; margin-bottom: 0.8rem;">⚠ CONCLUSIÓN DEL MARCO TEÓRICO</p>
         <p style="font-size: 1rem; color: var(--blanco); line-height: 1.9;">
           DIGITALNOSE no es solo un proyecto de electrónica — es una respuesta directa a
-          una necesidad de salud pública emergente. En un mundo pospandemia donde millones
-          de personas han perdido la capacidad de oler peligros, contar con un sistema
-          electrónico de bajo costo que monitoree continuamente la calidad del aire
-          representa un avance concreto en seguridad ambiental y calidad de vida.
-          <strong style="color:var(--cyan)">Cuando el olfato humano falla, la tecnología debe suplirlo.</strong>
+          una necesidad de salud pública global. En un mundo donde la anosmia afecta a
+          cientos de millones de personas, ya sea por COVID-19, Alzheimer, Parkinson,
+          envejecimiento u otras causas, contar con un sistema electrónico de bajo costo que
+          vigile continuamente la calidad del aire es un avance concreto en seguridad
+          y calidad de vida. <strong style="color:var(--cyan)">Cuando el olfato humano falla, la tecnología debe suplirlo.</strong>
+        </p>
+        <p style="font-size: 0.8rem; color: var(--gris-texto); margin-top: 1rem; font-style: italic;">
+          Fuentes verificadas: Ciencia UNAM (ciencia.unam.mx) · Facultad de Medicina UNAM / DICYT · NIH — Biblioteca Nacional de Medicina de EE.UU. · The BMJ · Nature Communications · Frontiers in Molecular Neuroscience · NPJ Parkinson's Disease · SciELO México · Secretaría de Salud México
         </p>
       </div>
     </div>
@@ -1411,6 +1590,92 @@
     </div>
   </section>
 
+  <div class="divider"></div>
+
+  <!-- ── CONGRESO + DESCARGA ── -->
+  <section id="descarga">
+    <div class="section">
+      <p class="section-label">08 — Congreso y Recursos</p>
+      <h2 class="section-titulo">Información del <em>Congreso</em><br>y Descarga del Proyecto</h2>
+
+      <!-- Banner del congreso -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 3rem;">
+
+        <!-- Info del congreso -->
+        <div style="background: rgba(0,229,255,0.04); border: 1px solid var(--cyan); padding: 2.5rem; position: relative; overflow: hidden;">
+          <div style="position:absolute; top:0; left:0; width:100%; height:3px; background: linear-gradient(90deg, var(--cyan), var(--verde-sensor));"></div>
+          <p style="font-family: var(--fuente-mono); font-size: 0.65rem; color: var(--cyan); letter-spacing: 0.25em; margin-bottom: 1.5rem;">🏛 DATOS DEL EVENTO</p>
+
+          <div style="display: flex; flex-direction: column; gap: 1.2rem;">
+            <div>
+              <p style="font-family: var(--fuente-mono); font-size: 0.6rem; color: var(--gris-texto); letter-spacing: 0.15em; margin-bottom: 0.3rem;">NOMBRE DEL CONGRESO</p>
+              <p style="font-family: var(--fuente-titulo); font-size: 1rem; color: var(--blanco); font-weight: 700; line-height: 1.3;">XXXVI Congreso de Investigación<br>CUAM-ACMor</p>
+              <p style="font-size: 0.78rem; color: var(--gris-texto); margin-top: 0.3rem;">Centro Universitario Anglo Mexicano + Academia de Ciencias de Morelos, A.C.</p>
+            </div>
+
+            <div style="height: 1px; background: var(--cyan-borde);"></div>
+
+            <div>
+              <p style="font-family: var(--fuente-mono); font-size: 0.6rem; color: var(--gris-texto); letter-spacing: 0.15em; margin-bottom: 0.3rem;">FECHA DEL EVENTO</p>
+              <p style="font-family: var(--fuente-titulo); font-size: 1.1rem; color: var(--cyan); font-weight: 700;">22 y 23 de Abril, 2026</p>
+              <p style="font-size: 0.78rem; color: var(--gris-texto);">9:00 a 14:00 hrs · Cuernavaca, Morelos</p>
+            </div>
+
+            <div style="height: 1px; background: var(--cyan-borde);"></div>
+
+            <div>
+              <p style="font-family: var(--fuente-mono); font-size: 0.6rem; color: var(--gris-texto); letter-spacing: 0.15em; margin-bottom: 0.3rem;">CATEGORÍA</p>
+              <p style="font-family: var(--fuente-titulo); font-size: 0.85rem; color: var(--verde-sensor); font-weight: 700;">Área de Construcción de Prototipos</p>
+              <p style="font-family: var(--fuente-mono); font-size: 0.72rem; color: var(--cyan); margin-top: 0.3rem;">K1. Área de Prototipos Digitales · Proyecto Escolar</p>
+            </div>
+
+            <div style="height: 1px; background: var(--cyan-borde);"></div>
+
+            <div>
+              <p style="font-family: var(--fuente-mono); font-size: 0.6rem; color: var(--gris-texto); letter-spacing: 0.15em; margin-bottom: 0.3rem;">NIVEL EDUCATIVO</p>
+              <p style="font-size: 0.88rem; color: var(--blanco);">Preparatoria / Bachillerato Técnico</p>
+              <p style="font-size: 0.78rem; color: var(--gris-texto);">CONALEP Plantel 241 · Cuernavaca, Morelos</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Descarga -->
+        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+
+          <div style="background: rgba(0,255,157,0.04); border: 1px solid rgba(0,255,157,0.3); padding: 2.5rem; flex: 1; position: relative; overflow: hidden;">
+            <div style="position:absolute; top:0; left:0; width:100%; height:3px; background: linear-gradient(90deg, var(--verde-sensor), var(--cyan));"></div>
+            <p style="font-family: var(--fuente-mono); font-size: 0.65rem; color: var(--verde-sensor); letter-spacing: 0.25em; margin-bottom: 1.5rem;">📦 CÓDIGO FUENTE</p>
+
+            <p style="font-family: var(--fuente-titulo); font-size: 1rem; color: var(--blanco); font-weight: 700; margin-bottom: 0.4rem;">DIGITALNOSE OS</p>
+            <p style="font-family: var(--fuente-mono); font-size: 0.68rem; color: var(--gris-texto); margin-bottom: 2rem;">DigitalNose-win32-x64.rar · Windows 32/64 bits</p>
+
+            <div style="background: rgba(0,0,0,0.5); border: 1px solid rgba(0,255,157,0.2); padding: 1rem 1.5rem; margin-bottom: 1.5rem;">
+              <p style="font-family: var(--fuente-mono); font-size: 0.6rem; color: var(--gris-texto); letter-spacing: 0.2em; margin-bottom: 0.5rem;">🔐 CONTRASEÑA DEL .RAR</p>
+              <p style="font-family: var(--fuente-titulo); font-size: 1.6rem; color: var(--verde-sensor); letter-spacing: 0.3em; font-weight: 900; text-shadow: 0 0 20px rgba(0,255,157,0.4);">SOMA6201</p>
+            </div>
+
+            <a href="https://www.mediafire.com/file/9u0oxhgyecx4xif/DigitalNose-win32-x64.rar/file"
+               target="_blank"
+               class="btn-primary"
+               style="display:flex; align-items:center; justify-content:center; gap:0.8rem; text-decoration:none; font-size:0.85rem; padding:1rem 1.5rem; background: var(--verde-sensor); color: var(--azul-profundo); width:100%; box-sizing:border-box;">
+              ⬇ DESCARGAR DESDE MEDIAFIRE
+            </a>
+
+            <div style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.6rem;">
+              <p style="font-family: var(--fuente-mono); font-size: 0.6rem; color: var(--gris-texto); letter-spacing: 0.1em;">CONTENIDO DEL ARCHIVO:</p>
+              <p style="font-size: 0.78rem; color: var(--gris-texto);">📄 digitalnose.ino — Firmware Arduino UNO R4 WiFi</p>
+              <p style="font-size: 0.78rem; color: var(--gris-texto);">📄 main.js — Aplicación Electron (alarma + tray)</p>
+              <p style="font-size: 0.78rem; color: var(--gris-texto);">📄 preload.js — Puente seguro IPC</p>
+              <p style="font-size: 0.78rem; color: var(--gris-texto);">📄 index.html — Interfaz gráfica tiempo real</p>
+              <p style="font-size: 0.78rem; color: var(--gris-texto);">📄 package.json — Dependencias Node.js</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ── FOOTER ── -->
   <footer>
     <div class="footer-logo">DIGITALNOSE</div>
@@ -1421,9 +1686,9 @@
       Monitor Atmosférico Inteligente · CONALEP 241 Cuernavaca
     </div>
     <div class="footer-meta">
-      Congreso de Investigación CUA-MOR XXXVI &nbsp;·&nbsp;
-      Carrera: Soporte y Mantenimiento en Equipo de Cómputo &nbsp;·&nbsp;
-      Morelos, México
+      XXXVI Congreso de Investigación CUAM-ACMor · 22 y 23 de Abril 2026 &nbsp;·&nbsp;
+      K1. Prototipos Digitales · Proyecto Escolar &nbsp;·&nbsp;
+      CONALEP 241 · Cuernavaca, Morelos
     </div>
   </footer>
 
